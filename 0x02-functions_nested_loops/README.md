@@ -1,4 +1,3 @@
-Write a function that prints the last digit of a number.
+Write a function that adds two integers and returns the result.
 
-Prototype: int print_last_digit(int);
-Returns the value of the last digit
+Prototype: int add(int, int);
