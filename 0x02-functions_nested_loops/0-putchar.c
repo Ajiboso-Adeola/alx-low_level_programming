@@ -1,17 +1,18 @@
-#include "stdio.h"
+
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints out _putchar
+ * Return: All good
  */
 int main(void)
 {
-	char *sh = "Holberton";
+	char *s = "_putchar"; /*arrays of characters or strings*/
+	int i = 0;
 
-	while (*sh)
+	while (s[i] != '\0')
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(s[i]);
+		i++;
 	}
 	_putchar('\n');
 
