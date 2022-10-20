@@ -1,23 +1,29 @@
 #include "main.h"
-/**
- * print_last_digit - print the last digit of a number
- * @n: int type number
- * Return: return value of last digit
- */
-int print_last_digit(int n)
-{
-	int ld;
 
-	if (n < 0)
+/**
+ * print_diagonal - function that draws a diagonal line on the terminal
+ * @n: number of times \ should be printed
+ * Return: void
+ */
+
+void print_diagonal(int n)
+{
+	int i, j;
+
+	if (n > 0)
 	{
-		ld = -1 * (n % 10);
-		_putchar(ld + '0');
-		return (ld);
+		for (i = 1; i <= n; i++)
+		{
+			for (j = 1; j < i; j++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
 	}
 	else
 	{
-		ld = n % 10;
-		_putchar(ld + '0');
-		return (ld);
+		_putchar('\n');
 	}
 }
